@@ -8,125 +8,318 @@
     <meta charset="UTF-8">
     <title>Radio Pulse - diffusion</title>
 </head>
+<style>
+        /* Style pour les grands écrans (PC) */
+        @media (min-width: 768px) {
+            .mobile-view {
+                display: none;
+            }
+        }
+
+        /* Style pour les petits écrans (mobiles) */
+        @media (max-width: 767px) {
+            .desktop-view {
+                display: none;
+            }
+
+            .mobile-view {
+                display: block;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            table th, table td {
+                border: 1px solid #000;
+                padding: 8px;
+                text-align: center;
+            }
+        }
+</style>
 <body>
     <h1>Emploi de diffusion</h1>
-    <table border="5" cellspacing="0" align="center">
-        <tr>
-            <td align="center" height="50"
-                width="100">
-                <b>Jour/Horaire</b>
-            </td>
-            <td align="center" height="50"
-                width="100">
-                <b>00:00 01:00</b>
-            </td>
-            <td align="center" height="50"
-                width="100">
-                <b>01:00 02:00</b>
-            </td>
-            <td align="center" height="50"
-                width="100">
-                <b>02:00 03:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>03:00 04:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>04:00 05:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>05:00 06:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>06:00 07:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>07:00 08:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>08:00 09:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>09:00 10:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>10:00 11:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>11:00 12:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>12:00 13:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>13:00 14:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>14:00 15:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>15:00 16:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>16:00 17:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>17:00 18:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>18:00 19:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>19:00 20:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>20:00 21:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>21:00 22:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>22:00 23:00</b>
-            </td>
-            <td align="center" height="50" width="100">
-                <b>23:00 00:00</b>
-            </td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>Lundi</b>
-            </td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>Mardi</b>
-            </td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>Mercredi</b>
-            </td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>Jeudi</b>
-            </td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>Vendredi</b>
-            </td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>Samedi</b>
-            </td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>Dimanche</b>
-            </td>
-        </tr>
-    </table>
+    <div class="desktop-view">
+        <table border="5" cellspacing="0" align="center">
+            <tr>
+                <td align="center" height="50" width="100"><b>Jour/Horaire</b></td>
+                <td align="center" height="50" width="100"><b>00:00 01:00</b></td>
+                <td align="center" height="50" width="100"><b>01:00 02:00</b></td>
+                <td align="center" height="50" width="100"><b>02:00 03:00</b></td>
+                <td align="center" height="50" width="100"><b>03:00 04:00</b></td>
+                <td align="center" height="50" width="100"><b>04:00 05:00</b></td>
+                <td align="center" height="50" width="100"><b>05:00 06:00</b></td>
+                <td align="center" height="50" width="100"><b>06:00 07:00</b></td>
+                <td align="center" height="50" width="100"><b>07:00 08:00</b></td>
+                <td align="center" height="50" width="100"><b>08:00 09:00</b></td>
+                <td align="center" height="50" width="100"><b>09:00 10:00</b></td>
+                <td align="center" height="50" width="100"><b>10:00 11:00</b></td>
+                <td align="center" height="50" width="100"><b>11:00 12:00</b></td>
+                <td align="center" height="50" width="100"><b>12:00 13:00</b></td>
+                <td align="center" height="50" width="100"><b>13:00 14:00</b></td>
+                <td align="center" height="50" width="100"><b>14:00 15:00</b></td>
+                <td align="center" height="50" width="100"><b>15:00 16:00</b></td>
+                <td align="center" height="50" width="100"><b>16:00 17:00</b></td>
+                <td align="center" height="50" width="100"><b>17:00 18:00</b></td>
+                <td align="center" height="50" width="100"><b>18:00 19:00</b></td>
+                <td align="center" height="50" width="100"><b>19:00 20:00</b></td>
+                <td align="center" height="50" width="100"><b>20:00 21:00</b></td>
+                <td align="center" height="50" width="100"><b>21:00 22:00</b></td>
+                <td align="center" height="50" width="100"><b>22:00 23:00</b></td>
+                <td align="center" height="50" width="100"><b>23:00 00:00</b></td>
+            </tr>
+            <tr>
+                <td align="center" height="50"><b>Lundi</b></td>
+            </tr>
+            <tr>
+                <td align="center" height="50"><b>Mardi</b></td>
+            </tr>
+            <tr>
+                <td align="center" height="50"><b>Mercredi</b></td>
+            </tr>
+            <tr>
+                <td align="center" height="50"><b>Jeudi</b></td>
+            </tr>
+            <tr>
+                <td align="center" height="50"><b>Vendredi</b></td>
+            </tr>
+            <tr>
+                <td align="center" height="50"><b>Samedi</b></td>
+            </tr>
+            <tr>
+                <td align="center" height="50"><b>Dimanche</b></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Vue Mobile -->
+    <div class="mobile-view">
+        <label for="day-select">Sélectionnez un jour :</label>
+        <select id="day-select" onchange="showDay()">
+            <option value="lundi">Lundi</option>
+            <option value="mardi">Mardi</option>
+            <option value="mercredi">Mercredi</option>
+            <option value="jeudi">Jeudi</option>
+            <option value="vendredi">Vendredi</option>
+            <option value="samedi">Samedi</option>
+            <option value="dimanche">Dimanche</option>
+        </select>
+        <table id="day-table" border="5" cellspacing="0" align="center">
+            <thead>
+                <tr>
+                    <th>Heure</th>
+                    <th>Programme</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les lignes seront ajoutées dynamiquement par JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const schedule = {
+            "lundi": [
+                "Programme Lundi 00:00 - 01:00",
+                "Programme Lundi 01:00 - 02:00",
+                "Programme Lundi 02:00 - 03:00",
+                "Programme Lundi 03:00 - 04:00",
+                "Programme Lundi 04:00 - 05:00",
+                "Programme Lundi 05:00 - 06:00",
+                "Programme Lundi 06:00 - 07:00",
+                "Programme Lundi 07:00 - 08:00",
+                "Programme Lundi 08:00 - 09:00",
+                "Programme Lundi 09:00 - 10:00",
+                "Programme Lundi 10:00 - 11:00",
+                "Programme Lundi 11:00 - 12:00",
+                "Programme Lundi 12:00 - 13:00",
+                "Programme Lundi 13:00 - 14:00",
+                "Programme Lundi 14:00 - 15:00",
+                "Programme Lundi 15:00 - 16:00",
+                "Programme Lundi 16:00 - 17:00",
+                "Programme Lundi 17:00 - 18:00",
+                "Programme Lundi 18:00 - 19:00",
+                "Programme Lundi 19:00 - 20:00",
+                "Programme Lundi 20:00 - 21:00",
+                "Programme Lundi 21:00 - 22:00",
+                "Programme Lundi 22:00 - 23:00",
+                "Programme Lundi 23:00 - 00:00"
+            ],
+            "mardi": [
+                "Programme Mardi 00:00 - 01:00",
+                "Programme Mardi 01:00 - 02:00",
+                "Programme Mardi 02:00 - 03:00",
+                "Programme Mardi 03:00 - 04:00",
+                "Programme Mardi 04:00 - 05:00",
+                "Programme Mardi 05:00 - 06:00",
+                "Programme Mardi 06:00 - 07:00",
+                "Programme Mardi 07:00 - 08:00",
+                "Programme Mardi 08:00 - 09:00",
+                "Programme Mardi 09:00 - 10:00",
+                "Programme Mardi 10:00 - 11:00",
+                "Programme Mardi 11:00 - 12:00",
+                "Programme Mardi 12:00 - 13:00",
+                "Programme Mardi 13:00 - 14:00",
+                "Programme Mardi 14:00 - 15:00",
+                "Programme Mardi 15:00 - 16:00",
+                "Programme Mardi 16:00 - 17:00",
+                "Programme Mardi 17:00 - 18:00",
+                "Programme Mardi 18:00 - 19:00",
+                "Programme Mardi 19:00 - 20:00",
+                "Programme Mardi 20:00 - 21:00",
+                "Programme Mardi 21:00 - 22:00",
+                "Programme Mardi 22:00 - 23:00",
+                "Programme Mardi 23:00 - 00:00"
+            ],
+            "mercredi": [
+                "Programme Mercredi 00:00 - 01:00",
+                "Programme Mercredi 01:00 - 02:00",
+                "Programme Mercredi 02:00 - 03:00",
+                "Programme Mercredi 03:00 - 04:00",
+                "Programme Mercredi 04:00 - 05:00",
+                "Programme Mercredi 05:00 - 06:00",
+                "Programme Mercredi 06:00 - 07:00",
+                "Programme Mercredi 07:00 - 08:00",
+                "Programme Mercredi 08:00 - 09:00",
+                "Programme Mercredi 09:00 - 10:00",
+                "Programme Mercredi 10:00 - 11:00",
+                "Programme Mercredi 11:00 - 12:00",
+                "Programme Mercredi 12:00 - 13:00",
+                "Programme Mercredi 13:00 - 14:00",
+                "Programme Mercredi 14:00 - 15:00",
+                "Programme Mercredi 15:00 - 16:00",
+                "Programme Mercredi 16:00 - 17:00",
+                "Programme Mercredi 17:00 - 18:00",
+                "Programme Mercredi 18:00 - 19:00",
+                "Programme Mercredi 19:00 - 20:00",
+                "Programme Mercredi 20:00 - 21:00",
+                "Programme Mercredi 21:00 - 22:00",
+                "Programme Mercredi 22:00 - 23:00",
+                "Programme Mercredi 23:00 - 00:00"
+            ],
+            "jeudi": [
+                "Programme Jeudi 00:00 - 01:00",
+                "Programme Jeudi 01:00 - 02:00",
+                "Programme Jeudi 02:00 - 03:00",
+                "Programme Jeudi 03:00 - 04:00",
+                "Programme Jeudi 04:00 - 05:00",
+                "Programme Jeudi 05:00 - 06:00",
+                "Programme Jeudi 06:00 - 07:00",
+                "Programme Jeudi 07:00 - 08:00",
+                "Programme Jeudi 08:00 - 09:00",
+                "Programme Jeudi 09:00 - 10:00",
+                "Programme Jeudi 10:00 - 11:00",
+                "Programme Jeudi 11:00 - 12:00",
+                "Programme Jeudi 12:00 - 13:00",
+                "Programme Jeudi 13:00 - 14:00",
+                "Programme Jeudi 14:00 - 15:00",
+                "Programme Jeudi 15:00 - 16:00",
+                "Programme Jeudi 16:00 - 17:00",
+                "Programme Jeudi 17:00 - 18:00",
+                "Programme Jeudi 18:00 - 19:00",
+                "Programme Jeudi 19:00 - 20:00",
+                "Programme Jeudi 20:00 - 21:00",
+                "Programme Jeudi 21:00 - 22:00",
+                "Programme Jeudi 22:00 - 23:00",
+                "Programme Jeudi 23:00 - 00:00"
+            ],
+            "vendredi": [
+                "Programme Vendredi 00:00 - 01:00",
+                "Programme Vendredi 01:00 - 02:00",
+                "Programme Vendredi 02:00 - 03:00",
+                "Programme Vendredi 03:00 - 04:00",
+                "Programme Vendredi 04:00 - 05:00",
+                "Programme Vendredi 05:00 - 06:00",
+                "Programme Vendredi 06:00 - 07:00",
+                "Programme Vendredi 07:00 - 08:00",
+                "Programme Vendredi 08:00 - 09:00",
+                "Programme Vendredi 09:00 - 10:00",
+                "Programme Vendredi 10:00 - 11:00",
+                "Programme Vendredi 11:00 - 12:00",
+                "Programme Vendredi 12:00 - 13:00",
+                "Programme Vendredi 13:00 - 14:00",
+                "Programme Vendredi 14:00 - 15:00",
+                "Programme Vendredi 15:00 - 16:00",
+                "Programme Vendredi 16:00 - 17:00",
+                "Programme Vendredi 17:00 - 18:00",
+                "Programme Vendredi 18:00 - 19:00",
+                "Programme Vendredi 19:00 - 20:00",
+                "Programme Vendredi 20:00 - 21:00",
+                "Programme Vendredi 21:00 - 22:00",
+                "Programme Vendredi 22:00 - 23:00",
+                "Programme Vendredi 23:00 - 00:00"
+            ],
+            "samedi": [
+                "Programme Samedi 00:00 - 01:00",
+                "Programme Samedi 01:00 - 02:00",
+                "Programme Samedi 02:00 - 03:00",
+                "Programme Samedi 03:00 - 04:00",
+                "Programme Samedi 04:00 - 05:00",
+                "Programme Samedi 05:00 - 06:00",
+                "Programme Samedi 06:00 - 07:00",
+                "Programme Samedi 07:00 - 08:00",
+                "Programme Samedi 08:00 - 09:00",
+                "Programme Samedi 09:00 - 10:00",
+                "Programme Samedi 10:00 - 11:00",
+                "Programme Samedi 11:00 - 12:00",
+                "Programme Samedi 12:00 - 13:00",
+                "Programme Samedi 13:00 - 14:00",
+                "Programme Samedi 14:00 - 15:00",
+                "Programme Samedi 15:00 - 16:00",
+                "Programme Samedi 16:00 - 17:00",
+                "Programme Samedi 17:00 - 18:00",
+                "Programme Samedi 18:00 - 19:00",
+                "Programme Samedi 19:00 - 20:00",
+                "Programme Samedi 20:00 - 21:00",
+                "Programme Samedi 21:00 - 22:00",
+                "Programme Samedi 22:00 - 23:00",
+                "Programme Samedi 23:00 - 00:00"
+            ],
+            "dimanche": [
+                "Programme Dimanche 00:00 - 01:00",
+                "Programme Dimanche 01:00 - 02:00",
+                "Programme Dimanche 02:00 - 03:00",
+                "Programme Dimanche 03:00 - 04:00",
+                "Programme Dimanche 04:00 - 05:00",
+                "Programme Dimanche 05:00 - 06:00",
+                "Programme Dimanche 06:00 - 07:00",
+                "Programme Dimanche 07:00 - 08:00",
+                "Programme Dimanche 08:00 - 09:00",
+                "Programme Dimanche 09:00 - 10:00",
+                "Programme Dimanche 10:00 - 11:00",
+                "Programme Dimanche 11:00 - 12:00",
+                "Programme Dimanche 12:00 - 13:00",
+                "Programme Dimanche 13:00 - 14:00",
+                "Programme Dimanche 14:00 - 15:00",
+                "Programme Dimanche 15:00 - 16:00",
+                "Programme Dimanche 16:00 - 17:00",
+                "Programme Dimanche 17:00 - 18:00",
+                "Programme Dimanche 18:00 - 19:00",
+                "Programme Dimanche 19:00 - 20:00",
+                "Programme Dimanche 20:00 - 21:00",
+                "Programme Dimanche 21:00 - 22:00",
+                "Programme Dimanche 22:00 - 23:00",
+                "Programme Dimanche 23:00 - 00:00"
+            ]
+        };
+
+        function showDay() {
+            const daySelect = document.getElementById('day-select');
+            const day = daySelect.value;
+            const dayTable = document.getElementById('day-table').getElementsByTagName('tbody')[0];
+            dayTable.innerHTML = '';
+
+            schedule[day].forEach((programme, index) => {
+                const row = dayTable.insertRow();
+                const cell1 = row.insertCell(0);
+                const cell2 = row.insertCell(1);
+                cell1.innerHTML = `${index}:00 - ${index + 1}:00`;
+                cell2.innerHTML = programme;
+            });
+        }
+
+        // Initialiser avec le premier jour sélectionné
+        document.addEventListener('DOMContentLoaded', showDay);
+    </script>
 </body>
 </html>
